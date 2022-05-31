@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Taguan Taco and Burger</title>
+	<meta name="viewport" content="width=device-width">
+</head>
+<style type="text/css">
+*{padding:0px; margin:0px;}
+body{
+border: 1px solid gray;
+background: #000020;
+color: skyblue;
+}
+header{
+width: 100%;
+border: 1px solid white;
+background: rgb(0,0,150);
+}
+header div{
+margin: 10px;
+height: 100%;
+float: top;
+display: inline;
+}
+header div img {
+margin: 5px;
+width: 100px;
+float: right;
+}
+header div h1{
+margin: 20px;
+width: 60%;
+color: white;
+float: top;
+text-align: left;
+font-size: 50px;
+}
+header nav{
+padding: 10px;
+width: 100%;
+height: 12%;
+float: bottom-left;
+display: inline-flex;
+list-style: none;
+}
+header nav li a{
+text-decoration: none;
+padding: 10px;
+color: white;
+}
+.active, header nav li:hover{
+ background: rgb(0,0,100);
+ boarder-radius: 5px;
+}
+
+.container{
+width: 100%;
+height: auto;
+diplay: flex;
+align-items: center;
+justify-content: center;
+}
+form{
+background: skyblue;
+display: flex;
+flex-direction: column;
+padding: 2vw 4vw;
+width: 90%;
+boarder-radius: 10px;
+color: black;
+}
+.tbl ul{
+margin:0;
+pading:0;
+}
+.tbl ul li{
+pading: 10px 0;
+list-style: none;
+}
+form h3{
+color: black;
+font-weight: 800;
+margin-bottom: 20px;
+}
+form input, form textarea{
+border: 0;
+margin: 10px 0;
+padding: 20px;
+outline: none;
+background: white;
+font-size: 16px;
+}
+form button{
+padding: 15px;
+background: red;
+color: white;
+font-size: 18px;
+boarder: 0;
+outline: none;
+cursor: pointer;
+width: 150px;
+margin: 20px auto 0;
+boarder-radius: 30px;
+}
+.footer{
+text-align: center;
+}
+.footer .contact{
+display: inline-flex;
+margin: 5px;
+}
+.footer .contact p:hover{
+ background: blue;
+ color: white;
+}
+@media screen and (max-width: 360px){
+header{height: 30%;}
+}
+@media screen and (max-width: 50%){
+header{height: 50%;}
+}
+</style>
+<body>
+ <header>
+ <div>
+   <img src="logo.png" alt="Logo" width="10px" height="" style="margin: 5px;pading: 5px">
+ </div>
+ <div>
+   <h1>Welcome!</h1>
+ </div>
+ <nav>
+ <li><a href="index.html" >Home </a></li>
+ <li class="active"><a href="Products.html" > Products </a></li>
+ <li><a href="About.html" > About </a></li>
+ </nav>
+ </header>
+<main>
+  <div>
+    <img src="Banner.png" alt="Banner" width="100%" height="">
+  </div>
+  <div>
+    <h3>&nbsp;We are glad to see you here!</h3>
+   </div>
+   <div class="pricing-tbl">
+   <div class="col">
+   <div class="tbl">
+   <div class="container">
+   <form action="https://formsubmit.co/taguantacoburger@gmail.com" method="POST">
+       <h3>Taco set</h3>
+     <div class="pice">
+       &#8369;109.00
+       <span>Per Order</span>
+     </div>
+       <ul>
+         <li><strong>1</strong>Taco</li>
+         <li><strong>1</strong>Drinks</li>
+         <input type="text" name="Taco Set ₱129"  placeholder="Number of order" required>
+         <input type="email" name="email" placeholder="Email ID" required>
+         <input type="tel" name="phone" placeholder="Phone No." required>
+         <input type="text" name="location" placeholder="Location" required>
+       </ul>
+       <button type="submit">Submit</button>
+       <p>Note: Please wait for the reply to get the total amount(including shipping fee)</p>
+   </form>
+   </div>
+   </div>
+ </div>
+</main>
+<footer style="border: 1px solid black; background: #00007f;">
+  <p style="margin: 5px; color: white;">Taguan Taco & Burger | All rights reserved  2022 (Beta)</p>
+</footer>
+</body>
+</html>
